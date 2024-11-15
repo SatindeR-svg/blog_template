@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+}
+
+header nav a:hover {
+    color: #ff6600;
+}
+
+.main-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.main-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.car-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.car-card h3 {
+    font-size: 1.4em;
+    margin: 15px 0 10px;
+}
+
+.about-section {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contact-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section form label {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-section form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background-color: #ff6600;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>WELCOME TO BOSS CAR RENTALS </h1>
+            <p>Your trusted car rental partner!</p>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#cars">Our Cars</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="main-section">
+        <h2>Our Car Categories</h2>
+        <div class="car-container">
+            <div class="car-card">
+                <img src="car1.jpg" alt="Sedan Car">
+                <h3>Sedan</h3>
+                <p>Comfortable and affordable sedans for city drives.</p>
+            </div>
+            <div class="car-card">
+                <img src="car2.jpg" alt="SUV Car">
+                <h3>SUV</h3>
+                <p>Spacious SUVs perfect for long trips and families.</p>
+            </div>
+            <div class="car-card">
+                <img src="car3.jpg" alt="Luxury Car">
+                <h3>Luxury</h3>
+                <p>Luxurious rides for premium experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We are a leading car rental service committed to providing the best experience to our customers. Our fleet includes a variety of cars from economic to luxury models to cater to all kinds of requirements.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us!</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 BOSS CAR RENTALS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
